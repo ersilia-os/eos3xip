@@ -2,7 +2,7 @@
 ## Model identifiers
 - Slug: grover-qm8
 - Ersilia ID: eos3xip
-- Tags: 
+- Tags: Electronic Properties, MoleculeNet, Quantum Chemistry
 
 # Model description
 Electronic spectra and excited state energy of small molecules calculated by multiple quantum mechanic methods.
@@ -22,9 +22,9 @@ This model was published by Yu R., Yatao B. et al. Self-Supervised Graph Transfo
 The GPL-v3 license applies to all parts of the repository that are not externally maintained libraries. This repository uses the externally maintained library "grover", located at /model and licensed under an MIT license
 
 # History 
-- Model was downloaded on 7/20/2022 from TencentAILab
+- Model was downloaded on 7/25/2022 from TencentAILab
 - We duplicated task/predict.py and scripts/save_features.py from Tencent GitHub repository
-- Model was incorporated to Ersilia on 7/20/2022
+- Model was incorporated to Ersilia on 7/25/2022
 
 # About us
 The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
