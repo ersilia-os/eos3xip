@@ -17,8 +17,6 @@ from grover.data.molfeaturegenerator import get_available_features_generators, \
     get_features_generator
 from grover.data.task_labels import rdkit_functional_group_label_features_generator
 
-
-
 def load_temp(temp_dir: str) -> Tuple[List[List[float]], int]:
     """
     Loads all features saved as .npz files in load_dir.
@@ -39,7 +37,6 @@ def load_temp(temp_dir: str) -> Tuple[List[List[float]], int]:
         temp_path = os.path.join(temp_dir, f'{temp_num}.npz')
 
     return features, temp_num
-
 
 def generate_and_save_features(args: Namespace):
     """
@@ -92,7 +89,6 @@ def generate_and_save_features(args: Namespace):
             features.extend(temp_features)
             temp_features = []
             temp_num += 1
-
     try:
         # Save all features
         save_features(args.save_path, features)
@@ -105,7 +101,7 @@ class Namespace:
     def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
 
-def save_features_main(input_path):
+def save_features_main(input_path,features_path):
 
     parser = ArgumentParser()
     parser.add_argument('--data_path', type=str, required=True,
@@ -123,16 +119,8 @@ def save_features_main(input_path):
                         help='Maximum number of data points to load')
     parser.add_argument('--sequential', action='store_true', default=False,
                         help='Whether to task sequentially rather than in parallel')
-    #args = parser.parse_args()
-
-    ##########################################################################################
-
     
-    args = Namespace(data_path=input_path, features_generator='rdkit_2d_normalized', max_data_size=None, restart=True, save_frequency=10000, save_path='features.npz', sequential=False)
-
-
-    ##########################################################################################
-    
+    args = Namespace(data_path=input_path, features_generator='rdkit_2d_normalized', max_data_size=None, restart=True, save_frequency=10000, save_path=features_path, sequential=False)
 
     if args.save_path is None:
         args.save_path = args.data_path.split('csv')[0] + 'npz'
