@@ -2,7 +2,7 @@
 import os
 import csv
 import sys
-from predict import grover_predict
+from grover.predict import grover_predict
 
 # parse arguments
 input_file = sys.argv[1]
@@ -24,6 +24,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow( ['E1-CC2','E2-CC2','f1-CC2','f2-CC2','E1-PBE0','E2-PBE0','f1-PBE0','f2-PBE0','E1-CAM','E2-CAM','f1-CAM','f2-CAM'])  # header
+    writer.writerow(['E1-CC2','E2-CC2','f1-CC2','f2-CC2','E1-PBE0','E2-PBE0','f1-PBE0','f2-PBE0','E1-CAM','E2-CAM','f1-CAM','f2-CAM'])  # header
     for o in outputs:
-        writer.writerow(o)
+       writer.writerow(o)

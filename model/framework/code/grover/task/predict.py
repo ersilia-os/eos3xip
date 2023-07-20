@@ -93,7 +93,6 @@ def make_predictions(args: Namespace, newest_train_args=None, smiles: List[str] 
     print('Loading training args')
 
     path = args.checkpoint_paths[0]
-    print("this is the path")
     scaler, features_scaler = load_scalars(path)
     train_args = load_args(path)
 
@@ -113,7 +112,7 @@ def make_predictions(args: Namespace, newest_train_args=None, smiles: List[str] 
     args.debug = True
 
     logger = create_logger('predict', quiet=False)
-    print('Loading data')
+
     args.task_names = get_task_names(args.data_path)
     if smiles is not None:
         test_data = get_data_from_smiles(smiles=smiles, skip_invalid_smiles=False)
