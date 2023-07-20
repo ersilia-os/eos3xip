@@ -2,7 +2,7 @@
 import os
 import csv
 import sys
-from grover.main import grover_predict
+from predict import grover_predict
 
 # parse arguments
 input_file = sys.argv[1]
