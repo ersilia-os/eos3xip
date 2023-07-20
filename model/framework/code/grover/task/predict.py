@@ -93,6 +93,7 @@ def make_predictions(args: Namespace, newest_train_args=None, smiles: List[str] 
     print('Loading training args')
 
     path = args.checkpoint_paths[0]
+    print("this is the path")
     scaler, features_scaler = load_scalars(path)
     train_args = load_args(path)
 
