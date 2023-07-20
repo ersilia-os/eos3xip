@@ -9,4 +9,4 @@ RUN pip install scipy==1.7.1
 RUN pip install scikit-learn==0.24.2
 
 WORKDIR /repo
-COPY ./repo
+COPY . /repo
