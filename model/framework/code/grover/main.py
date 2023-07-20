@@ -9,9 +9,9 @@ from pathlib import Path
 import tempfile
 
 from .grover.util.parsing import get_newest_train_args
-from task.predict import make_predictions, write_prediction
+from .task.predict import make_predictions, write_prediction
 from .grover.data.torchvocab import MolVocab
-import scripts.save_features as sf
+import grover.scripts.save_features as sf
 
 class Namespace:
     def __init__(self, **kwargs):
@@ -64,5 +64,5 @@ def grover_predict(input_txt_path,output_path):
 
     train_args = get_newest_train_args()
     avg_preds, test_smiles = make_predictions(args, train_args)
-    write_prediction(avg_preds, test_smiles, args)
     os.remove(csv_path)
+    return avg_preds, test_smiles

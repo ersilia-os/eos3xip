@@ -11,28 +11,19 @@ output_file = sys.argv[2]
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
 
-# my model
-def my_model(smiles_list):
-    return grover_predict(input_txt_path=input_file, output_path=output_file)
 
 
-# read SMILES from .csv file, assuming one column with header
-with open(input_file, "r") as f:
-    reader = csv.reader(f)
-    next(reader)  # skip header
-    smiles_list = [r[0] for r in reader]
-
-# run model
-outputs = my_model(smiles_list)
+#No need to read the smiles from the main.py , the model will read itself.
+outputs, read_smiles = grover_predict(input_txt_path=input_file, output_path=output_file)
 
 #check input and output have the same lenght
-input_len = len(smiles_list)
+input_len = len(read_smiles)
 output_len = len(outputs)
 assert input_len == output_len
 
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["value"])  # header
+    writer.writerow( ['E1-CC2','E2-CC2','f1-CC2','f2-CC2','E1-PBE0','E2-PBE0','f1-PBE0','f2-PBE0','E1-CAM','E2-CAM','f1-CAM','f2-CAM'])  # header
     for o in outputs:
-        writer.writerow([o])
+        writer.writerow(o)

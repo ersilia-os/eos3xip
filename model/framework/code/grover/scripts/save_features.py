@@ -12,10 +12,10 @@ from tqdm import tqdm
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
-from grover.util.utils import get_data, makedirs, load_features, save_features
-from grover.data.molfeaturegenerator import get_available_features_generators, \
+from grover.grover.util.utils import get_data, makedirs, load_features, save_features
+from grover.grover.data.molfeaturegenerator import get_available_features_generators, \
     get_features_generator
-from grover.data.task_labels import rdkit_functional_group_label_features_generator
+from grover.grover.data.task_labels import rdkit_functional_group_label_features_generator
 
 def load_temp(temp_dir: str) -> Tuple[List[List[float]], int]:
     """
