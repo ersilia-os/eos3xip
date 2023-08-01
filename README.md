@@ -25,6 +25,8 @@ Prediction of the electronic spectra and excited state energy of small molecules
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos3xip)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3xip.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos3xip) (AMD64, ARM64)
 
 ## Citation
 
