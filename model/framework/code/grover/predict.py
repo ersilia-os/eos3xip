@@ -13,6 +13,8 @@ from .task.predict import make_predictions, write_prediction
 from .grover.data.torchvocab import MolVocab
 import grover.scripts.save_features as sf
 
+
+
 class Namespace:
     def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
@@ -25,6 +27,7 @@ def setup(seed):
     random.seed(seed)
     torch.backends.cudnn.deterministic = True
 
+"""
 def smiles_to_dataframe(txt_file_path):
     df = pd.read_csv(txt_file_path, header=None,  names=['smiles'])
     dummy_labels = pd.Series(np.zeros(df.shape[0]))
@@ -33,6 +36,20 @@ def smiles_to_dataframe(txt_file_path):
         df[n] = dummy_labels.values
     input_csv_path = txt_file_path.split(".")[0] + ".csv"
     df.to_csv(input_csv_path, index=False)
+    return input_csv_path
+"""
+def smiles_to_dataframe(input_file):
+    df = pd.read_csv(input_file)  # Assumes 'smiles' column already exists
+    dummy_labels = pd.Series(np.zeros(df.shape[0]))
+    names = [
+        'E1-CC2','E2-CC2','f1-CC2','f2-CC2',
+        'E1-PBE0','E2-PBE0','f1-PBE0','f2-PBE0',
+        'E1-CAM','E2-CAM','f1-CAM','f2-CAM'
+    ]
+    for n in names:
+        df[n] = dummy_labels.values
+    input_csv_path = "run_input_grover.csv"
+    df.to_csv(input_csv_path, index=False)  # Overwrites original CSV
     return input_csv_path
 
 tmp_folder = tempfile.mktemp()
