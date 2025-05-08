@@ -20,12 +20,11 @@ if __name__ == '__main__':
     input_len = len(read_smiles)
     output_len = len(outputs)
     assert input_len == output_len
-    print("HERE")
     print(output_file)
 
     # write output in a .csv file
     with open(output_file, "w") as f:
         writer = csv.writer(f)
-        writer.writerow(['E1-CC2','E2-CC2','f1-CC2','f2-CC2','E1-PBE0','E2-PBE0','f1-PBE0','f2-PBE0','E1-CAM','E2-CAM','f1-CAM','f2-CAM'])  # header
+        writer.writerow(['e1_cc2', 'e2_cc2', 'f1_cc2', 'f2_cc2', 'e1_pbe0', 'e2_pbe0', 'f1_pbe0', 'f2_pbe0', 'e1_cam', 'e2_cam', 'f1_cam', 'f2_cam'])  # header
         for o in outputs:
             writer.writerow(o)

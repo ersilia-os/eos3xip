@@ -1,1 +1,13 @@
 name,type,direction,description
+e1_cc2,float,high,First singlet excitation energy computed using the CC2 method
+e2_cc2,float,high,Second singlet excitation energy computed using CC2
+f1_cc2,float,high,Oscillator strength corresponding to the first excitation (e1) using CC2
+f2_cc2,float,high,Oscillator strength for the second excitation (e2) using CC2
+e1_pbe0,float,high,First excitation energy using PBE0 density functional
+e2_pbe0,float,high,Second excitation energy using PBE0
+f1_pbe0,float,high,Oscillator strength for the first excitation using PBE0
+f2_pbe0,float,high,Oscillator strength for the second excitation using PBE0
+e1_cam,float,high,First excitation energy using CAM_B3LYP functional.
+e2_cam,float,high,Second excitation energy using CAM_B3LYP
+f1_cam,float,high,Oscillator strength for the first excitation using CAM_B3LYP
+f2_cam,float,high,Oscillator strength for the second excitation using CAM_B3LYP
