@@ -46,5 +46,11 @@
         "ARM64"
     ],
     "Model Size": 1413.0,
-    "Environment Size": 2408.0
+    "Environment Size": 2408.0,
+    "Image Size": 6553.36,
+    "Computational Performance 1": 50.19,
+    "Computational Performance 2": 85.81,
+    "Computational Performance 3": 448.9,
+    "Computational Performance 4": -1.0,
+    "Computational Performance 5": -1.0
 }
