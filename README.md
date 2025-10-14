@@ -2,8 +2,7 @@
 
 Prediction of the electronic spectra and excited state energy of small molecules. The training set is the QM8 from Molecule Net, where the electronic properties have been calculated by multiple quantum mechanic methods. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
 
-This model was incorporated on 2022-07-20.
-
+This model was incorporated on 2022-07-20.Last packaged on 2025-10-14.
 
 ## Information
 ### Identifiers
@@ -51,11 +50,11 @@ _10 of 12 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1398`
 - **Environment Size (Mb):** `2422`
-- **Image Size (Mb):** `6553.36`
+- **Image Size (Mb):** `6635.77`
 
 **Computational Performance (seconds):**
-- 10 inputs: `50.19`
-- 100 inputs: `448.9`
+- 10 inputs: `34.12`
+- 100 inputs: `158.94`
 - 10000 inputs: `-1`
 
 ### References
