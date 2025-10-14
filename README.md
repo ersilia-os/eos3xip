@@ -4,6 +4,7 @@ Prediction of the electronic spectra and excited state energy of small molecules
 
 This model was incorporated on 2022-07-13.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos3xip`
@@ -13,7 +14,7 @@ This model was incorporated on 2022-07-13.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `MoleculeNet`, `Chemical graph model`, `Quantum properties`
 
 ### Input
