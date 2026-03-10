@@ -2,7 +2,7 @@
 
 Prediction of the electronic spectra and excited state energy of small molecules. The training set is the QM8 from Molecule Net, where the electronic properties have been calculated by multiple quantum mechanic methods. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
 
-This model was incorporated on 2022-07-20.Last packaged on 2025-10-14.
+This model was incorporated on 2022-07-20.Last packaged on 2026-03-10.
 
 ## Information
 ### Identifiers
@@ -44,17 +44,17 @@ _10 of 12 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3xip](https://hub.docker.com/r/ersiliaos/eos3xip)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3xip.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3xip.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1398`
 - **Environment Size (Mb):** `2405`
-- **Image Size (Mb):** `6635.77`
+- **Image Size (Mb):** `6638.23`
 
 **Computational Performance (seconds):**
-- 10 inputs: `34.12`
-- 100 inputs: `158.94`
+- 10 inputs: `33.58`
+- 100 inputs: `53.2`
 - 10000 inputs: `-1`
 
 ### References
