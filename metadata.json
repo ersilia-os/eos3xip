@@ -39,20 +39,17 @@
     "License": "MIT",
     "Contributor": "Amna-28",
     "Incorporation Date": "2022-07-20",
-    "Last Packaging Date": "2025-10-14",
+    "Last Packaging Date": "2026-03-10",
     "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3xip.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3xip",
-    "Docker Architecture": [
-        "AMD64",
-        "ARM64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 1398.0,
     "Environment Size": 2405.0,
-    "Image Size": 6635.77,
-    "Computational Performance 1": 34.12,
-    "Computational Performance 2": 39.13,
-    "Computational Performance 3": 158.94,
-    "Computational Performance 4": 1444.35,
+    "Image Size": 6638.23,
+    "Computational Performance 1": 33.58,
+    "Computational Performance 2": 26.7,
+    "Computational Performance 3": 53.2,
+    "Computational Performance 4": 383.77,
     "Computational Performance 5": -1.0
 }
