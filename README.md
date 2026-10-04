@@ -1,6 +1,6 @@
 # Electronic spectra and excited state energy
 
-Prediction of the electronic spectra and excited state energy of small molecules. The training set is the QM8 from Molecule Net, where the electronic properties have been calculated by multiple quantum mechanic methods. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
+Calculates electronic spectra and excited-state energies, properties normally obtained from time-consuming quantum-chemical computation. The QM8 benchmark within MoleculeNet supplies reference values produced by several independent quantum mechanical methods, allowing each to be reproduced separately rather than averaged. The predictor was fine-tuned from a graph transformer pretrained on 10 million unlabelled molecules. QM8 covers only small organic molecules, so accuracy degrades on larger or more conjugated systems than those represented.
 
 This model was incorporated on 2022-07-20.Last packaged on 2026-03-10.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-07-20.Last packaged on 2026-03-10.
 ### Output
 - **Output Dimension:** `12`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Predicted electronic spectra and excited state energy
+- **Interpretation:** Predicted singlet excitation energies and oscillator strengths from four quantum-chemical methods.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
