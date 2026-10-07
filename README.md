@@ -1,6 +1,6 @@
 # Electronic spectra and excited state energy
 
-Calculates electronic spectra and excited-state energies, properties normally obtained from time-consuming quantum-chemical computation. The QM8 benchmark within MoleculeNet supplies reference values produced by several independent quantum mechanical methods, allowing each to be reproduced separately rather than averaged. The predictor was fine-tuned from a graph transformer pretrained on 10 million unlabelled molecules. QM8 covers only small organic molecules, so accuracy degrades on larger or more conjugated systems than those represented.
+Calculates electronic spectra and excited-state energies, properties that otherwise demand time-consuming quantum-chemical computation. QM8, part of MoleculeNet, supplies reference values for 21,786 small molecules computed by several independent quantum mechanical methods, and each method is reproduced separately rather than averaged into one number. The predictor was fine-tuned from a graph transformer pretrained on 10 million unlabelled molecules, with three fine-tuned folds averaged. QM8 covers only small organic molecules, so accuracy degrades on larger or more conjugated systems.
 
 This model was incorporated on 2022-07-20.Last packaged on 2026-03-10.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-07-20.Last packaged on 2026-03-10.
 ### Output
 - **Output Dimension:** `12`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Predicted singlet excitation energies and oscillator strengths from four quantum-chemical methods.
+- **Interpretation:** Predicted singlet excitation energies and oscillator strengths from three quantum-chemical methods (CC2, PBE0, CAM-B3LYP).
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
