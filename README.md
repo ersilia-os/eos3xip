@@ -3,7 +3,7 @@
 Calculates electronic spectra and excited-state energies, properties that otherwise demand time-consuming quantum-chemical computation. QM8, part of MoleculeNet, supplies reference values for 21,786 small molecules computed by several independent quantum mechanical methods, and each method is reproduced separately rather than averaged into one number. The predictor was fine-tuned from a graph transformer pretrained on 10 million unlabelled molecules, with three fine-tuned folds averaged. QM8 covers only small organic molecules, so accuracy degrades on larger or more conjugated systems.
 
 This model was incorporated on 2022-07-20.
-Last packaged on 2026-03-10.
+Last packaged on 2026-11-03.
 
 ## Information
 ### Identifiers
@@ -45,17 +45,17 @@ _10 of 12 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3xip](https://hub.docker.com/r/ersiliaos/eos3xip)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3xip.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3xip.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1398`
 - **Environment Size (Mb):** `2404`
-- **Image Size (Mb):** `6638.23`
+- **Image Size (Mb):** `3774.09`
 
 **Computational Performance (seconds):**
-- 10 inputs: `33.58`
-- 100 inputs: `53.2`
+- 10 inputs: `28.33`
+- 100 inputs: `98.28`
 - 10000 inputs: `-1`
 
 ### References
