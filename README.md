@@ -3,7 +3,7 @@
 Calculates electronic spectra and excited-state energies, properties that otherwise demand time-consuming quantum-chemical computation. QM8, part of MoleculeNet, supplies reference values for 21,786 small molecules computed by several independent quantum mechanical methods, and each method is reproduced separately rather than averaged into one number. The predictor was fine-tuned from a graph transformer pretrained on 10 million unlabelled molecules, with three fine-tuned folds averaged. QM8 covers only small organic molecules, so accuracy degrades on larger or more conjugated systems.
 
 This model was incorporated on 2022-07-20.
-Last packaged on 2026-11-03.
+Last packaged on 2026-11-16.
 
 ## Information
 ### Identifiers
@@ -51,12 +51,12 @@ _10 of 12 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1398`
 - **Environment Size (Mb):** `2404`
-- **Image Size (Mb):** `3774.09`
+- **Image Size (Mb):** `2343.23`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.33`
-- 100 inputs: `98.28`
-- 10000 inputs: `-1`
+- 10 inputs: `32.03`
+- 100 inputs: `42.29`
+- 10000 inputs: `1522.38`
 
 ### References
 - **Source Code**: [https://github.com/tencent-ailab/grover](https://github.com/tencent-ailab/grover)
